@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { Genre } from 'src/app/domain/genre.model';
 import { GenreService } from 'src/app/services/genre.service';
 
@@ -10,9 +11,10 @@ import { GenreService } from 'src/app/services/genre.service';
 export class GenresPageComponent implements OnInit {
   public genresList: Genre[];
 
-  constructor(private genreService: GenreService) { }
+  constructor(private genreService: GenreService, private title: Title) { }
 
   public ngOnInit(): void {
+    this.title.setTitle("Genres - MoviesCenter")
     const genresList = this.genreService.genreList;
     this.genresList = genresList;
   }

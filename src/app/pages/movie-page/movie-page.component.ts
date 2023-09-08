@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { map } from 'rxjs';
 import { Genre } from 'src/app/domain/genre.model';
@@ -17,7 +18,7 @@ export class MoviePageComponent implements OnInit {
   public movie: Movie;
   public relatedMovies: Movie[];
 
-  constructor(private movieService: MovieService, private activatedRoute: ActivatedRoute) {
+  constructor(private movieService: MovieService, private activatedRoute: ActivatedRoute, private title: Title) {
   }
 
   public ngOnInit(): void {
@@ -35,11 +36,13 @@ export class MoviePageComponent implements OnInit {
         return movie;
       })).subscribe(data => {
         this.movie = data;
+        this.title.setTitle(this.movie.getTitle() + " - MoviesCenter")
       });
 
       this.movieService.getRelatedMovies(this.movie.getId()).pipe(this.movieService.handleMovieListRequest()).subscribe(data => {
         this.relatedMovies = data;
       });
+
     });
   }
 }

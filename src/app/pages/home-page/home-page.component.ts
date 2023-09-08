@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 import { Movie } from 'src/app/domain/movie.model';
 import { MovieService } from 'src/app/services/movie.service';
@@ -13,9 +14,11 @@ export class HomePageComponent implements OnInit {
   public popularMovies: Movie[];
   public data: any;
 
-  constructor(private movieService: MovieService) { }
+  constructor(private movieService: MovieService, private title: Title) { }
 
   public ngOnInit(): void {
+    this.title.setTitle("Home - MoviesCenter")
+
     const topRatedMovies = [new Movie({ id: 1, title: "Macha e o Usso" }), new Movie({ id: 2, title: "Os três porquinhos" }), new Movie({ id: 2, title: "Os três porquinhos" }), new Movie({ id: 2, title: "Os três porquinhos" }), new Movie({ id: 2, title: "Os três porquinhos" }), new Movie({ id: 2, title: "Os três porquinhos" }), new Movie({ id: 2, title: "Os três porquinhos" }), new Movie({ id: 2, title: "Os três porquinhos" }), new Movie({ id: 2, title: "Os três porquinhos" })];
     this.topRatedMovies = topRatedMovies;
 

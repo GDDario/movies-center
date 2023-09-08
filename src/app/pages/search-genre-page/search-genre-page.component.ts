@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 
 import { Movie } from 'src/app/domain/movie.model';
@@ -14,9 +15,11 @@ export class SearchGenrePageComponent implements OnInit {
   public genreName: string;
   public foundMovies: Movie[];
 
-  constructor(private activatedRoute: ActivatedRoute, private movieService: MovieService) { }
+  constructor(private activatedRoute: ActivatedRoute, private movieService: MovieService, private title: Title) { }
 
   public ngOnInit(): void {
+    this.title.setTitle("Search - MoviesCenter")
+
     this.activatedRoute.queryParams.subscribe(params => {
       this.genreName = params["genreName"];
     });
