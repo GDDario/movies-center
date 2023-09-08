@@ -1,0 +1,16 @@
+<!-- <a [routerLink]="['/movie', movie.getId()]"> -->
+  <div class="card-container" (click)="navigate()">
+    <img
+      [src]="'https://image.tmdb.org/t/p/original/' + movie.getBackdropPath()"
+      [alt]="movie.getAltText()"
+      class="img-cover"
+      >
+    <div
+      class="movie-description"
+      >
+      <p>{{ movie.getTitle() }}</p>
+      <p>{{ movie.getRateText() }}</p>
+      <p><u>Click to see the details</u></p>
+    </div>
+  </div>
+<!-- </a> -->

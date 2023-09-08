@@ -1,0 +1,17 @@
+<header>
+  <a routerLink="home" class="logo-link">
+    <img class="logo" src="../../../assets/img/logo.png" alt="Logo of Movies Center">
+  </a>
+  <div class="right-container">
+    <div class="search-bar-container">
+      <input type="text" class="search-bar" id="search-bar" #searchBar>
+      <a [routerLink]="">
+        <img class="search-icon" src="../../../assets/img/search-icon.png" alt="Search" (click)="changeRoute()">
+      </a>
+    </div>
+    <a routerLink="/home">Home</a>
+    <a routerLink="/genres">Genres</a>
+    <a routerLink="/contact">Contact</a>
+    <a routerLink="/about">About</a>
+  </div>
+</header>

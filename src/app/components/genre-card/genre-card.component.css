@@ -1,0 +1,30 @@
+a {
+  color: #fff;
+}
+
+.card-container {
+  position: relative;
+  height: fit-content;
+  cursor: pointer;
+  height: 200px;
+  width: 300px;
+}
+
+.img-cover {
+  height: 200px;
+  width: 300px;
+  filter: brightness(0.3);
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.genre-name {
+  position: absolute;
+  top: 16px;
+  left: calc(16px);
+}
+
+p {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.8rem;
+}

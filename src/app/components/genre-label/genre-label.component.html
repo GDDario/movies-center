@@ -1,0 +1,5 @@
+<a [routerLink]="['/genres', genre.getId()]" [queryParams]="{genreName: genre.getName()}">
+  <div class="label-container" [style.background]="getBackgroundColor()">
+    <span>{{ genre.getName() }}</span>
+  </div>
+</a>

@@ -1,0 +1,45 @@
+footer {
+  font-family: 'Permanent Marker', cursive;;
+  background-color: #000;
+  padding: 16px;
+  border-top: 2px solid #fff;
+  -webkit-box-shadow: 0px -5px 23px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -5px 23px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -5px 23px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.left, .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  flex-direction: column;
+}
+
+.right p {
+  width: 100%;
+  text-align: right;
+}
+
+.logo {
+  width: 150px;
+}
+
+.copyright-container {
+  margin-left: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.copyright {
+  font-size: 1.1rem;
+}
+

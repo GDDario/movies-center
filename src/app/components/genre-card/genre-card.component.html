@@ -1,0 +1,14 @@
+<a [routerLink]="['/genres', genre.getId()]" [queryParams]="{genreName: genre.getName()}">
+  <div class="card-container">
+    <img
+      [src]="'../../../assets/img/genres-background/' + genre.getBackdropPath()"
+      [alt]="getAltText()"
+      class="img-cover"
+      >
+    <div
+      class="genre-name"
+      >
+      <p>{{ genre.getName() }}</p>
+    </div>
+  </div>
+</a>

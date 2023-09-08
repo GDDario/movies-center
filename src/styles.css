@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222222;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+main {
+  margin: 16px;
+  min-height: calc(100vh - 300px);
+}
+
+h2, button {
+  font-family: 'Permanent Marker', cursive;
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.movies-container {
+  display: flex;
+  gap: 16px;
+  row-gap: 16px;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
