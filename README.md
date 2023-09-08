@@ -1,27 +1,41 @@
 # MoviesCenter
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+## Sobre
+Esse é um projeto criado por mim para fins de treino e para manter como portifólio. Usei uma API externa para o recebimento de dados, sendo melhor tratado sobre na seção <a href="https://github.com/GDDario/movies-center/edit/main/README.md#Agradecimentos">Agradecimentos</a>.
 
-## Development server
+As tecnolgias utilizadas foram:
+* Angular v16.2.0 - como framework;
+* HTML - linguagem de marcação/estruturação;
+* CSS - estilos;
+* Typescript - linguagem de programação;
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Como executar
 
-## Code scaffolding
+* Clone o projeto:
+```sh
+git clone https://github.com/GabrielGiovanii/loja-client-angular.git
+```
+* Instale o projeto e suas dependências:
+```sh
+npm install
+```
+* Execute a aplicação:
+```sh
+ng serve
+```
+Ele ficará disponível no browser/navegador na URL **localhost:4200**.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Prints
+* Página inicial
+![home-page](https://github.com/GDDario/movies-center/assets/90910186/2cc39848-3ee8-4da5-8d9c-90bfb763e63f)
 
-## Build
+* Página de gêneros
+![genres-page](https://github.com/GDDario/movies-center/assets/90910186/7323cc78-103f-471a-8ca9-01b282510aab)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+* Página de filme
+![movie-page](https://github.com/GDDario/movies-center/assets/90910186/1c0899c0-8940-4bea-9b46-d803bd6bc6e0)
 
-## Running unit tests
+## Agradecimentos
+Agradeço aos meus colegas <a href="https://github.com/GabrielGiovanii">Gabriel Giovani</a> e <a href="https://github.com/Dante-Gabriel-Tokomoto-Takatu">Dante Tokomoto</a> pelo apoio e camaradagem durante o desenvolvimento.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Agradeço também ao serviço <a href="https://www.themoviedb.org/">TheMovieDB</a> pela ótima API aberta. O direito de todas as imagens e dados sobre os filmes pertencem à ele.
