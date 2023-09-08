@@ -1,0 +1,9 @@
+<main>
+  <h2>Results for "{{ genreName }}"</h2>
+  <div class="movies-container">
+    <app-movie-card
+      *ngFor="let movie of foundMovies"name
+      [movie]="movie"
+      ></app-movie-card>
+  </div>
+</main>

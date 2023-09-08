@@ -1,0 +1,59 @@
+header {
+  width: 100%;
+  height: 500px;
+  background-color: #000;
+  border-bottom: 1px solid #fff;
+  padding: 24px;
+  display: flex;
+  gap: 24px;
+}
+
+header img {
+  width: 40%;
+  min-width: 740px;
+  background-color: darkolivegreen;
+  border: 1px solid #fff;
+}
+
+.movie-info {
+  width: 60%;
+}
+
+.movie-info h2 {
+  text-align: center;
+}
+
+.movie-info .content {
+  height: 85%;
+}
+
+.overview {
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+.movie-info .tags {
+  height: 10%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.movies-container {
+  display: flex;
+  gap: 16px;
+  row-gap: 16px;
+  flex-wrap: wrap;
+}
+
+h2 {
+  margin-left: 6px;
+  margin-bottom: 10px;
+}
+
+.labels {
+  margin-top: 8px;
+  display: flex;
+  gap: 4px;
+}

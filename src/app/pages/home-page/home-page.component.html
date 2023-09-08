@@ -1,1 +1,20 @@
-<p>home-page works!</p>
+<main>
+  <h2>Top rated</h2>
+  <div
+    class="movies-container"
+    >
+    <app-movie-card
+      *ngFor="let movie of topRatedMovies"
+      [movie]="movie"
+      ></app-movie-card>
+  </div>
+  <h2>Popular movies</h2>
+  <div
+    class="movies-container"
+    >
+    <app-movie-card
+      *ngFor="let movie of popularMovies"
+      [movie]="movie"
+      ></app-movie-card>
+  </div>
+</main>

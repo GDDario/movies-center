@@ -5,6 +5,8 @@ import { HomePageComponent } from "../pages/home-page/home-page.component";
 import { MoviePageComponent } from "../pages/movie-page/movie-page.component";
 import { AboutPageComponent } from "../pages/about-page/about-page.component";
 import { GenresPageComponent } from "../pages/genres-page/genres-page.component";
+import { SearchPageComponent } from "../pages/search-page/search-page.component";
+import { SearchGenrePageComponent } from "../pages/search-genre-page/search-genre-page.component";
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -15,14 +17,25 @@ const appRoutes: Routes = [
     path: "contact", component: ContactPageComponent
   },
   {
-    path: "genres", component: GenresPageComponent
+    path: "movie/:id", component: MoviePageComponent,
   },
   {
-    path: "movie", component: MoviePageComponent
+    path: "search", component: SearchPageComponent,
   },
   {
     path: "about", component: AboutPageComponent
-  }
+  },
+  {
+    path: "genres",
+    children: [
+      {
+        "path": "", component: GenresPageComponent
+      },
+      {
+        "path": ":id", component: SearchGenrePageComponent
+      }
+    ]
+  },
 ];
 
 @NgModule({

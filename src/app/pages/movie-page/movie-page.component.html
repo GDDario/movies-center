@@ -1,1 +1,34 @@
-<p>movie-page works!</p>
+<router-outlet></router-outlet>
+<header>
+  <img [src]="'https://image.tmdb.org/t/p/original/' + movie.getBackdropPath()" alt="">
+  <div class="movie-info">
+    <div class="content">
+      <h2>{{ movie.getTitle() }}</h2>
+
+      <p>Vote average: {{ movie.getVoteAverage() }}</p>
+      <p>Vote count: {{ movie.getVoteCount() }}</p>
+      <p>Popularity: {{ movie.getPopularity() }}</p>
+      <p>Release date: {{ movie.getReleaseDate() }}</p>
+      <p class="overview">Overview:</p>
+      <p>{{ movie.getOverview() }}</p>
+    </div>
+    <div class="tags">
+      <p>Tags</p>
+      <div class="labels">
+        <app-genre-label *ngFor="let genre of movie.getGenres()" [genre]="genre"></app-genre-label>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="movies-container">
+    <h2>Related movies</h2>
+    <div class="movies-container">
+    <app-movie-card
+      *ngFor="let movie of relatedMovies"
+      [movie]="movie"
+      ></app-movie-card>
+  </div>
+  </div>
+</main>

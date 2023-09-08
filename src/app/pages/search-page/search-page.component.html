@@ -1,0 +1,9 @@
+<main>
+  <h2>Results for "{{ search }}"</h2>
+  <div class="movies-container">
+    <app-movie-card
+      *ngFor="let movie of relatedMovies"
+      [movie]="movie"
+      ></app-movie-card>
+  </div>
+</main>

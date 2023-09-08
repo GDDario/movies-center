@@ -1,0 +1,27 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+form {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+}
+
+button {
+  float: right;
+  width: 100px;
+}
+

@@ -1,1 +1,6 @@
-<p>genres-page works!</p>
+<router-outlet></router-outlet>
+<main>
+  <div class="genres-container">
+    <app-genre-card *ngFor="let genre of genresList" [genre]="genre"></app-genre-card>
+  </div>
+</main>
