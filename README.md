@@ -1,7 +1,7 @@
 # MoviesCenter
 
 ## Sobre
-Esse é um projeto criado por mim para fins de treino e para manter como portifólio. Usei uma API externa para o recebimento de dados, sendo melhor tratado sobre na seção <a href="https://github.com/GDDario/movies-center/edit/main/README.md#Agradecimentos">Agradecimentos</a>.
+Esse é um projeto criado por mim para fins de treino e para manter como portifólio. Usei uma API externa para o recebimento de dados, sendo melhor tratado sobre na seção <a href="https://github.com/GDDario/movies-center/tree/main#agradecimentos">Agradecimentos</a>.
 
 As tecnolgias utilizadas foram:
 * Angular v16.2.0 - como framework;
